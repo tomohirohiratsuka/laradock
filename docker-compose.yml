@@ -41,6 +41,11 @@ volumes:
     driver: ${VOLUMES_DRIVER}
 
 services:
+    applications:
+      image: tianon/true
+      volumes:
+         - ../test:/var/www
+
 
 ### Workspace Utilities ##################################
     workspace:
